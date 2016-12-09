@@ -1,0 +1,389 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Python-study by ohwhos</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="without-description">
+        <h1>Python-study</h1>
+        <p></p>
+        <p class="view"><a href="https://github.com/ohwhos/python-study">View the Project on GitHub <small>ohwhos/python-study</small></a></p>
+        <ul>
+          <li><a href="https://github.com/ohwhos/python-study/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/ohwhos/python-study/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/ohwhos/python-study">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="파이썬" class="anchor" href="#%ED%8C%8C%EC%9D%B4%EC%8D%AC" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>파이썬</h1>
+
+<p><a href="https://wikidocs.net/images/page/5/pahkey_KRRKrp.png"></a></p>
+
+<blockquote>
+<p>1991년 귀도 반 로섬이 발표한 C기반의 객체 지향적 대화형 프로그래밍 언어 이다.</p>
+</blockquote>
+
+<h2>
+<a id="특징" class="anchor" href="#%ED%8A%B9%EC%A7%95" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>특징</h2>
+
+<ul>
+<li>간결하고 쉬운 (직관적인) 문법</li>
+<li>빠른 개발 속도</li>
+<li>오픈소스</li>
+</ul>
+
+<h3>
+<a id="간결하고-쉬운-문법" class="anchor" href="#%EA%B0%84%EA%B2%B0%ED%95%98%EA%B3%A0-%EC%89%AC%EC%9A%B4-%EB%AC%B8%EB%B2%95" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>간결하고 쉬운 문법</h3>
+
+<pre><code>print 'hello world!'
+</code></pre>
+
+<p>파이썬에서 hello world 를 출력하기 위한 코드는 단 한줄!</p>
+
+<h3>
+<a id="사라진-세미콜론" class="anchor" href="#%EC%82%AC%EB%9D%BC%EC%A7%84-%EC%84%B8%EB%AF%B8%EC%BD%9C%EB%A1%A0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>사라진 세미콜론</h3>
+
+<p>파이썬의 가장 큰 특징 중 하나가 생소한 문법이다.</p>
+
+<p>파이썬은 다른 보편적인 언어와 달리 명령어 끝에 세미콜론을 쓰지 않는다.</p>
+
+<p>아 물론 세미콜론을  붙여도 문제없이 동작 하지만 파이썬이 공식으로 제공하는 코드 컨벤션인 PEP가 경고한다. </p>
+
+<pre><code>print 'Where is semicolon?'
+</code></pre>
+
+<h3>
+<a id="들여쓰기-scope" class="anchor" href="#%EB%93%A4%EC%97%AC%EC%93%B0%EA%B8%B0-scope" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>들여쓰기 scope</h3>
+
+<pre><code># Python
+if Condition:
+    do_something()
+// JS
+if(condition){
+    do_something()
+}
+</code></pre>
+
+<p>파이썬의 코드블럭이다.</p>
+
+<p>이 해괴 망측한 문법은 코드블럭을 { }  로 구분하는 대신 가독성이 뛰어나다는 이유로 들여쓰기로 구분한다. 쓰다보니 편하네요.</p>
+
+<h3>
+<a id="pep8" class="anchor" href="#pep8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PEP8</h3>
+
+<p>파이썬이 제공하는 PEP라는 코드 스타일 가이드이다.</p>
+
+<p>다른 언어로 짜여진 프로젝트들을 보면 코드 스타일이 다르지만 파이썬은 엄격하게 가이드라인을 만들어 제시하고 있다.</p>
+
+<ol>
+<li>들여쓰기는 공백 4칸을 권장합니다.</li>
+<li>한줄은 최대 79자까지 (????)</li>
+<li>최상위(top-level) 함수와 클래스 정의는 2줄씩 띄어 씁니다.</li>
+<li>클래스 내의 메소드 정의는 1줄씩 띄어 씁니다.</li>
+</ol>
+
+<p>파이참은 칼같이 이 가이드라인을 지킨다.
+우리 모두 지켜 씁시다. </p>
+
+<h2>
+<a id="자료형" class="anchor" href="#%EC%9E%90%EB%A3%8C%ED%98%95" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>자료형</h2>
+
+<h3>
+<a id="숫자형" class="anchor" href="#%EC%88%AB%EC%9E%90%ED%98%95" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>숫자형</h3>
+
+<pre><code>a = 1
+</code></pre>
+
+<p>평범하다.</p>
+
+<h3>
+<a id="문자열" class="anchor" href="#%EB%AC%B8%EC%9E%90%EC%97%B4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>문자열</h3>
+
+<pre><code>a = 'this is string'
+</code></pre>
+
+<h4>
+<a id="문자열-내장함수" class="anchor" href="#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%82%B4%EC%9E%A5%ED%95%A8%EC%88%98" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>문자열 내장함수</h4>
+
+<p>문자열은 많은 함수를 가지고 있다.</p>
+
+<p>''capitalize', 'center', 'count', 'decode', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'index', 'isalnum', 'isalpha', 'isdigit', 'islower', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill'......</p>
+
+<p>그중 몇개를 자세히 알아보자.</p>
+
+<pre><code>a = 'Hello String'
+a.upper(), a.lower()    # 'HELLO STRING', 'hello string'
+'i am min seok kim'.title   # 'I Am Min Seok Kim'
+</code></pre>
+
+<p>파이썬에서 자주 쓰이는 String.format 함수를 알아보자.</p>
+
+<pre><code>'I am {}'.format('Babo')    # 'I am Babo'
+'I love {0} and {1}'.format('you', 'me')    # I love you and me
+'{s} {v} {o}'.format(s='Modernize', v='Your', o='DBMS') # Modernize Your DBMS
+
+'{s} {v} {o}'.format({ 's': 'Mordernize', 'v': 'Your', 'o': 'DBMS' })   # KeyError: 's'
+</code></pre>
+
+<h3>
+<a id="튜플" class="anchor" href="#%ED%8A%9C%ED%94%8C" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>튜플</h3>
+
+<p>파이썬은 튜플이란 이상한 데이터 형태를 가지고있다.</p>
+
+<h4>
+<a id="기본형태" class="anchor" href="#%EA%B8%B0%EB%B3%B8%ED%98%95%ED%83%9C" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>기본형태</h4>
+
+<pre><code>a = 1
+b = 2
+tuple = a, b
+print tuple     # (1, 2)
+</code></pre>
+
+<p>이런것도 가능하다</p>
+
+<pre><code>a, b = 1, 2
+a # 1
+b # 2
+</code></pre>
+
+<pre><code>def func(a, b):
+    return a + b
+tuple = 1, 2
+print func(*tuple)  # 3
+</code></pre>
+
+<p>ㅎㄷㄷ</p>
+
+<h3>
+<a id="딕셔너리" class="anchor" href="#%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>딕셔너리</h3>
+
+<pre><code>a = {
+    'key': 'value',
+    'key2': 'value2'
+}
+# 이렇게 선언할 수도 있다.
+b = dict(
+    key='value',
+    key2='value2'
+)
+</code></pre>
+
+<p>보기엔 JSON 과 유사해보인다.</p>
+
+<p>딕셔너리는 키와 값 한쌍을 갖는 데이터 집합이다.</p>
+
+<p>키는 중복될 수 없으며 키값이 중복되있으면 한 값만 남는데, 보통 뒤에 선언된 값이 남는다.</p>
+
+<p>항상 그렇다는건 아니다. 중복되게 쓰지 마세요.</p>
+
+<pre><code>a = {
+    'key': 'value',
+    'key': 'value?'
+}
+a   # { 'key': 'value?' }
+</code></pre>
+
+<h4>
+<a id="주소-참조" class="anchor" href="#%EC%A3%BC%EC%86%8C-%EC%B0%B8%EC%A1%B0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>주소 참조</h4>
+
+<p>딕셔너리의 복사에 대해 이야기 해보자.</p>
+
+<p>딕셔너리의 복사는 2종류가 있는데 코드로 봅시다.</p>
+
+<pre><code>a = {
+    'key': 'value',
+    'key2': 'value2'
+}
+b = a
+del b['key2']
+print a
+</code></pre>
+
+<p>print a 의 결과값은 { 'key': 'value' } 이다.</p>
+
+<p>일반 대입식처럼 딕셔너리를 새로운 변수에 대입했을 경우엔 값을 복사하는게 아니고 딕셔너리의 주소를 복사하게 된다. </p>
+
+<p>포인터랑 비슷하다고 보면 된다.</p>
+
+<p>값 자체를 복사해서 새로운 딕셔너리 객체를 만들고 싶으면 copy() 내장 함수를 사용하면 된다.</p>
+
+<pre><code>a = {
+    'key': 'value',
+    'key2': 'value2'
+}
+b = a.copy()
+del b['key2']
+print a # { 'key': 'value', 'key2': 'value2' }
+print b # { 'key': 'value' }
+</code></pre>
+
+<h4>
+<a id="딕셔너리-제어" class="anchor" href="#%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC-%EC%A0%9C%EC%96%B4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>딕셔너리 제어</h4>
+
+<pre><code>a = {
+    'key': 'value',
+    'key2': 'value2'
+}
+# 삭제
+del a['key']
+a   # { 'key2': 'value2' }
+</code></pre>
+
+<h4>
+<a id="반복문-적용하기" class="anchor" href="#%EB%B0%98%EB%B3%B5%EB%AC%B8-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>반복문 적용하기</h4>
+
+<p>딕셔너리 객체 (파이썬에선 모든것이 객체이다) 는 keys, values, items... 함수를 프로토타입으로 가지고있다.</p>
+
+<ul>
+<li>(Dict).keys() 함수는 딕셔너리의 키들을 리스트 형태로 반환한다.</li>
+<li>(Dict).values() 함수는 딕셔너리의 값들을 리스트 형태로 반환한다.</li>
+<li>(Dict).items() 함수는 딕셔너리의 키,밸류 쌍을 튜플로 묶어 리스트 형태로 반환한다.</li>
+</ul>
+
+<pre><code>a = {
+    'key': 'value',
+    'key2': 'value2'
+}
+a.keys()    # ['key', 'key2']
+a.values()  # ['value', 'value1']
+a.items()   # [('key', 'value'), ('key2', 'value2')]
+</code></pre>
+
+<p>여기서 주의해야 할 점이 있다. 이 책에선 파이썬 2버전으로 예제를 쓰고있지만 3버전 같은 경우엔 다르기 때문에 주의해야 한다.</p>
+
+<p>파이썬 2.7 버전 까지는 keys, values, items 함수는 리스트 형태로 반환을 했지만 3.0 버전부터는 메모리 낭비의 이유로 리스트 객체가 아닌 이터러블(반복가능)한 객체를 반환해준다.</p>
+
+<p>리스트는 아니기때문에 직접 접근할 수는 없지만 이터러블한 객체기때문에 반복문에 넣어도 아무 문제가 없고 메모리문제도 개선되어 성능을 향상시킬 수 있다.</p>
+
+<pre><code># in python 3
+a = {
+    'key': 'value',
+    'key2': 'value2'
+}
+a.keys()    // dict_keys(['key2', 'key'])
+a.values()
+a.items()
+for key in a.keys():
+    print(key)
+</code></pre>
+
+<h4>
+<a id="딕셔너리-리터럴함수-선언-방식-퍼포먼스-비교" class="anchor" href="#%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC-%EB%A6%AC%ED%84%B0%EB%9F%B4%ED%95%A8%EC%88%98-%EC%84%A0%EC%96%B8-%EB%B0%A9%EC%8B%9D-%ED%8D%BC%ED%8F%AC%EB%A8%BC%EC%8A%A4-%EB%B9%84%EA%B5%90" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>딕셔너리 리터럴/함수 선언 방식 퍼포먼스 비교</h4>
+
+<pre><code>$ python -m timeit "d=dict(prop='val')"
+10000000 loops, best of 3: 0.219 usec per loop
+$ python -m timeit "d={'prop': 'val'}"
+10000000 loops, best of 3: 0.075 usec per loop
+
+$ python3 -m timeit "d = dict(prop='val')"
+1000000 loops, best of 3: 0.475 usec per loop
+$ python3 -m timeit "d = {'prop': 'val'}"
+10000000 loops, best of 3: 0.143 usec per loop
+</code></pre>
+
+<p>리터럴 선언 방식이 더 빠르다.</p>
+
+<h3>
+<a id="집합" class="anchor" href="#%EC%A7%91%ED%95%A9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>집합</h3>
+
+<h2>
+<a id="제어문" class="anchor" href="#%EC%A0%9C%EC%96%B4%EB%AC%B8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>제어문</h2>
+
+<h3>
+<a id="if" class="anchor" href="#if" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>if</h3>
+
+<pre><code>if condition:
+    print 'Oh its true'
+
+tFlag, fFlag = True, False
+if not fFlag:   # if fFlag != True
+    print '!'
+elif tFlag:     # else if tFlag == true
+    print '!!'
+else:
+    print '..'
+</code></pre>
+
+<h3>
+<a id="while" class="anchor" href="#while" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>while</h3>
+
+<pre><code>while condition:
+    do_something()
+    if condition:
+        break   # 반복문 종료
+    elif condition:
+        continue    # 현재 반복 종료 (다음 반복으로 넘어감)
+</code></pre>
+
+<h3>
+<a id="for" class="anchor" href="#for" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>for</h3>
+
+<pre><code>for value in ITERABLE_VARIABLE:
+    print value
+
+for i in [1, 2, 3, 4, 5]:
+    print value 
+# 1
+# 2
+# ...
+d = {
+    'key': '11',
+    'key2': '22'
+}
+for key in d:
+    print key
+# key
+# key2
+for key, value in d:
+    print key, value
+</code></pre>
+
+<h3>
+<a id="switch" class="anchor" href="#switch" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>switch</h3>
+
+<p>파이썬은 공식적으로 switch/case 문을 지원하지 않는다. 이유는 잘 모르겠다
+추가 바람</p>
+
+<h2>
+<a id="핵심-기능" class="anchor" href="#%ED%95%B5%EC%8B%AC-%EA%B8%B0%EB%8A%A5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>핵심 기능</h2>
+
+<h3>
+<a id="클래스-모듈" class="anchor" href="#%ED%81%B4%EB%9E%98%EC%8A%A4-%EB%AA%A8%EB%93%88" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>클래스, 모듈</h3>
+
+<h3>
+<a id="패키지" class="anchor" href="#%ED%8C%A8%ED%82%A4%EC%A7%80" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>패키지</h3>
+
+<h3>
+<a id="예외" class="anchor" href="#%EC%98%88%EC%99%B8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>예외</h3>
+
+<h3>
+<a id="익명함수-람다" class="anchor" href="#%EC%9D%B5%EB%AA%85%ED%95%A8%EC%88%98-%EB%9E%8C%EB%8B%A4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>익명함수 (람다)</h3>
+
+<h3>
+<a id="dunder-variables" class="anchor" href="#dunder-variables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>dunder variables</h3>
+
+<h2>
+<a id="카드놀이" class="anchor" href="#%EC%B9%B4%EB%93%9C%EB%86%80%EC%9D%B4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>카드놀이</h2>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/ohwhos">ohwhos</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
