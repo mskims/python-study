@@ -1,26 +1,20 @@
 # 파이썬
 
-<span class="confluence-embedded-file-wrapper">![](https://wikidocs.net/images/page/5/pahkey_KRRKrp.png)</span>
+[](https://wikidocs.net/images/page/5/pahkey_KRRKrp.png)
 
 > 1991년 귀도 반 로섬이 발표한 C기반의 객체 지향적 대화형 프로그래밍 언어 이다.
 
 ## 특징
 
-*   간결하고 쉬운 (직관적인) 문법
-*   빠른 개발 속도
-*   오픈소스
+* 간결하고 쉬운 (직관적인) 문법
+* 빠른 개발 속도
+* 오픈소스
 
 ### 간결하고 쉬운 문법
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">print 'hello world!'</pre>
-
-</div>
-
-</div>
+```
+print 'hello world!'
+```
 
 파이썬에서 hello world 를 출력하기 위한 코드는 단 한줄!
 
@@ -32,33 +26,21 @@
 
 아 물론 세미콜론을  붙여도 문제없이 동작 하지만 파이썬이 공식으로 제공하는 코드 컨벤션인 PEP가 경고한다. 
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">print 'Where is semicolon?'</pre>
-
-</div>
-
-</div>
+```
+print 'Where is semicolon?'
+```
 
 ### 들여쓰기 scope
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs"># Python
+```
+# Python
 if Condition:
 	do_something()
 // JS
 if(condition){
 	do_something()
-}</pre>
-
-</div>
-
-</div>
+}
+```
 
 파이썬의 코드블럭이다.
 
@@ -82,32 +64,19 @@ if(condition){
 우리 모두 지켜 씁시다. 
 
 ## 자료형
-
 ### 숫자형
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">a = 1</pre>
-
-</div>
-
-</div>
+```
+a = 1
+```
 
 평범하다.
 
 ### 문자열
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">a = 'this is string'</pre>
-
-</div>
-
-</div>
+```
+a = 'this is string'
+```
 
 #### 문자열 내장함수
 
@@ -117,33 +86,21 @@ if(condition){
 
 그중 몇개를 자세히 알아보자.
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">a = 'Hello String'
+```
+a = 'Hello String'
 a.upper(), a.lower()	# 'HELLO STRING', 'hello string'
-'i am min seok kim'.title	# 'I Am Min Seok Kim'</pre>
-
-</div>
-
-</div>
+'i am min seok kim'.title	# 'I Am Min Seok Kim'
+```
 
 파이썬에서 자주 쓰이는 String.format 함수를 알아보자.
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">'I am {}'.format('Babo')	# 'I am Babo'
+```
+'I am {}'.format('Babo')	# 'I am Babo'
 'I love {0} and {1}'.format('you', 'me')	# I love you and me
 '{s} {v} {o}'.format(s='Modernize', v='Your', o='DBMS')	# Modernize Your DBMS
 
-'{s} {v} {o}'.format({ 's': 'Mordernize', 'v': 'Your', 'o': 'DBMS' })	# KeyError: 's'</pre>
-
-</div>
-
-</div>
+'{s} {v} {o}'.format({ 's': 'Mordernize', 'v': 'Your', 'o': 'DBMS' })	# KeyError: 's'
+```
 
 ### 튜플
 
@@ -151,55 +108,34 @@ a.upper(), a.lower()	# 'HELLO STRING', 'hello string'
 
 #### 기본형태
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">a = 1
+```
+a = 1
 b = 2
 tuple = a, b
-print tuple		# (1, 2)</pre>
-
-</div>
-
-</div>
+print tuple		# (1, 2)
+```
 
 이런것도 가능하다
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">a, b = 1, 2
+```
+a, b = 1, 2
 a # 1
-b # 2</pre>
+b # 2
+```
 
-</div>
-
-</div>
-
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">def func(a, b):
+```
+def func(a, b):
 	return a + b
 tuple = 1, 2
-print func(*tuple)	# 3</pre>
-
-</div>
-
-</div>
+print func(*tuple)	# 3
+```
 
 ㅎㄷㄷ
 
 ### 딕셔너리
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">a = {
+```
+a = {
 	'key': 'value',
 	'key2': 'value2'
 }
@@ -207,11 +143,8 @@ print func(*tuple)	# 3</pre>
 b = dict(
 	key='value',
 	key2='value2'
-)</pre>
-
-</div>
-
-</div>
+)
+```
 
 보기엔 JSON 과 유사해보인다.
 
@@ -221,19 +154,13 @@ b = dict(
 
 항상 그렇다는건 아니다. 중복되게 쓰지 마세요.
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">a = {
+```
+a = {
 	'key': 'value',
 	'key': 'value?'
 }
-a	# { 'key': 'value?' }</pre>
-
-</div>
-
-</div>
+a	# { 'key': 'value?' }
+```
 
 #### 주소 참조
 
@@ -241,21 +168,15 @@ a	# { 'key': 'value?' }</pre>
 
 딕셔너리의 복사는 2종류가 있는데 코드로 봅시다.
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">a = {
+```
+a = {
 	'key': 'value',
 	'key2': 'value2'
 }
 b = a
 del b['key2']
-print a</pre>
-
-</div>
-
-</div>
+print a
+```
 
 print a 의 결과값은 { 'key': 'value' } 이다.
 
@@ -265,64 +186,46 @@ print a 의 결과값은 { 'key': 'value' } 이다.
 
 값 자체를 복사해서 새로운 딕셔너리 객체를 만들고 싶으면 copy() 내장 함수를 사용하면 된다.
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">a = {
+```
+a = {
 	'key': 'value',
 	'key2': 'value2'
 }
 b = a.copy()
 del b['key2']
 print a # { 'key': 'value', 'key2': 'value2' }
-print b # { 'key': 'value' }</pre>
-
-</div>
-
-</div>
+print b # { 'key': 'value' }
+```
 
 #### 딕셔너리 제어
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">a = {
+```
+a = {
 	'key': 'value',
 	'key2': 'value2'
 }
 # 삭제
 del a['key']
-a	# { 'key2': 'value2' }</pre>
-
-</div>
-
-</div>
+a	# { 'key2': 'value2' }
+```
 
 #### 반복문 적용하기
 
 딕셔너리 객체 (파이썬에선 모든것이 객체이다) 는 keys, values, items... 함수를 프로토타입으로 가지고있다.
 
-*   (Dict).keys() 함수는 딕셔너리의 키들을 리스트 형태로 반환한다.
-*   (Dict).values() 함수는 딕셔너리의 값들을 리스트 형태로 반환한다.
-*   (Dict).items() 함수는 딕셔너리의 키,밸류 쌍을 튜플로 묶어 리스트 형태로 반환한다.
+* (Dict).keys() 함수는 딕셔너리의 키들을 리스트 형태로 반환한다.
+* (Dict).values() 함수는 딕셔너리의 값들을 리스트 형태로 반환한다.
+* (Dict).items() 함수는 딕셔너리의 키,밸류 쌍을 튜플로 묶어 리스트 형태로 반환한다.
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">a = {
+```
+a = {
 	'key': 'value',
 	'key2': 'value2'
 }
 a.keys()	# ['key', 'key2']
 a.values()	# ['value', 'value1']
-a.items()	# [('key', 'value'), ('key2', 'value2')]</pre>
-
-</div>
-
-</div>
+a.items()	# [('key', 'value'), ('key2', 'value2')]
+```
 
 여기서 주의해야 할 점이 있다. 이 책에선 파이썬 2버전으로 예제를 쓰고있지만 3버전 같은 경우엔 다르기 때문에 주의해야 한다.
 
@@ -330,11 +233,8 @@ a.items()	# [('key', 'value'), ('key2', 'value2')]</pre>
 
 리스트는 아니기때문에 직접 접근할 수는 없지만 이터러블한 객체기때문에 반복문에 넣어도 아무 문제가 없고 메모리문제도 개선되어 성능을 향상시킬 수 있다.
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs"># in python 3
+```
+# in python 3
 a = {
 	'key': 'value',
 	'key2': 'value2'
@@ -343,19 +243,13 @@ a.keys()	// dict_keys(['key2', 'key'])
 a.values()
 a.items()
 for key in a.keys():
-	print(key)</pre>
-
-</div>
-
-</div>
+	print(key)
+```
 
 #### 딕셔너리 리터럴/함수 선언 방식 퍼포먼스 비교
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: bash; gutter: false; theme: Emacs" data-theme="Emacs">$ python -m timeit "d=dict(prop='val')"
+```
+$ python -m timeit "d=dict(prop='val')"
 10000000 loops, best of 3: 0.219 usec per loop
 $ python -m timeit "d={'prop': 'val'}"
 10000000 loops, best of 3: 0.075 usec per loop
@@ -363,25 +257,17 @@ $ python -m timeit "d={'prop': 'val'}"
 $ python3 -m timeit "d = dict(prop='val')"
 1000000 loops, best of 3: 0.475 usec per loop
 $ python3 -m timeit "d = {'prop': 'val'}"
-10000000 loops, best of 3: 0.143 usec per loop</pre>
-
-</div>
-
-</div>
+10000000 loops, best of 3: 0.143 usec per loop
+```
 
 리터럴 선언 방식이 더 빠르다.
 
 ### 집합
-
 ## 제어문
-
 ### if
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">if condition:
+```
+if condition:
 	print 'Oh its true'
 
 tFlag, fFlag = True, False
@@ -390,36 +276,24 @@ if not fFlag:	# if fFlag != True
 elif tFlag:		# else if tFlag == true
 	print '!!'
 else:
-	print '..'</pre>
-
-</div>
-
-</div>
+	print '..'
+```
 
 ### while
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">while condition:
+```
+while condition:
 	do_something()
 	if condition:
 		break	# 반복문 종료
 	elif condition:
-		continue	# 현재 반복 종료 (다음 반복으로 넘어감)</pre>
-
-</div>
-
-</div>
+		continue	# 현재 반복 종료 (다음 반복으로 넘어감)
+```
 
 ### for
 
-<div class="code panel pdl" style="border-width: 1px;">
-
-<div class="codeContent panelContent pdl">
-
-<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: py; gutter: false; theme: Emacs" data-theme="Emacs">for value in ITERABLE_VARIABLE:
+```
+for value in ITERABLE_VARIABLE:
 	print value
 
 for i in [1, 2, 3, 4, 5]:
@@ -436,11 +310,9 @@ for key in d:
 # key
 # key2
 for key, value in d:
-	print key, value</pre>
+	print key, value
+```
 
-</div>
-
-</div>
 
 ## 핵심 기능
 
